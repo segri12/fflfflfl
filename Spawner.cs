@@ -13,9 +13,10 @@ public class Spawner : MonoBehaviour
     {
         var wait = new WaitForSeconds(_countSecondsBeforeSpawn);
 
-        while (true)
+        while (enabled)
         {
             ActivatePoint();
+
             yield return wait;
         }
     }

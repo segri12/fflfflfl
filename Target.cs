@@ -3,7 +3,9 @@ public class Target : MonoBehaviour
 {
     [SerializeField] private Transform[] _waypoints;
     [SerializeField, Min(0)] private float _speed;
+
     private int _currentWaypointIndex = 0;
+
     private void Update()
     {
         if (_waypoints.Length == 0) return;
